@@ -1,0 +1,6 @@
+Mwm*client*title*fontList:-dejavu-sans-mono-o-normal--8-*-*-*-*-*-iso8859-*
+Xft.rgba: rgb
+xterm*faceName: DejaVu Sans Mono:size=10:antialias=true
+xterm*font: 7x13
+xterm*background: LemonChiffon
+xterm*selectToClipboard: true

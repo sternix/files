@@ -1,0 +1,24 @@
+--- efl-1.20.2/configure    2017-08-10 11:14:46.000000000 +0300
++++ efl-1.20.2_OK/configure    2017-08-20 16:23:12.775343000 +0300
+@@ -24958,12 +24958,12 @@
+ for ac_header in  \
+ execinfo.h \
+ mcheck.h \
+-sys/inotify.h \
+ sys/signalfd.h \
+ sys/types.h \
+ sys/param.h \
+ sys/mman.h \
+ netinet/in.h \
++netinet/tcp.h \
+ sys/auxv.h \
+ asm/hwcap.h \
+
+@@ -75576,6 +75576,7 @@
+ ### Checks for linker characteristics
+
+ ### Checks for library functions
++ac_cv_header_sys_inotify_h="no"
+ have_inotify="${ac_cv_header_sys_inotify_h}"
+  if test "x${have_inotify}" = "xyes"; then
+   HAVE_INOTIFY_TRUE=
