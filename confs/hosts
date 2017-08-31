@@ -1,0 +1,4 @@
+::1                     localhost localhost.my.domain
+
+# for CDE
+127.0.0.1               localhost localhost.my.domain xyz xyz.example.com

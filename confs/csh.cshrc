@@ -13,6 +13,7 @@ setenv PATH ${PATH}:${PGSQL_HOME}/bin
 setenv PKG_CONFIG_PATH /opt/efl/1_20_2/libdata/pkgconfig
 
 setenv GODEBUG cgocheck=2
+setenv CLICOLOR			   # colorize shell
 
 bindkey "\e[1~" beginning-of-line  # Home
 bindkey "\e[7~" beginning-of-line  # Home rxvt
@@ -22,3 +23,5 @@ bindkey "\e[4~" end-of-line        # End
 bindkey "\e[8~" end-of-line        # End rxvt
 bindkey "^[[1;5D"   backward-word  # ctrl+left
 bindkey "^[[1;5C"   forward-word   # ctrl+right
+bindkey '^R'	i-search-back	   # Ctrl + R backward search
+
