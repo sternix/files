@@ -4,7 +4,7 @@
 
 set path = (/sbin /bin /usr/sbin /usr/bin /usr/games /usr/local/sbin /usr/local/bin $HOME/bin)
 
-setenv PGSQL_HOME /opt/pgsql/10_b3
+setenv PGSQL_HOME /opt/pgsql/10_b4
 setenv EDITOR vim
 setenv INPUTRC /usr/local/etc/inputrc
 setenv GOROOT /opt/go/1_9/go
@@ -25,3 +25,5 @@ bindkey "^[[1;5D"   backward-word  # ctrl+left
 bindkey "^[[1;5C"   forward-word   # ctrl+right
 bindkey '^R'	i-search-back	   # Ctrl + R backward search
 
+# add completion support
+source /usr/share/examples/tcsh/complete.tcsh
