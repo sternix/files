@@ -4,12 +4,15 @@
 
 set path = (/sbin /bin /usr/sbin /usr/bin /usr/games /usr/local/sbin /usr/local/bin $HOME/bin)
 
-setenv PGSQL_HOME /opt/pgsql/10_b4
+setenv PGSQL_HOME /opt/pgsql/10_0
 setenv EDITOR vim
 setenv INPUTRC /usr/local/etc/inputrc
-setenv GOROOT /opt/go/1_9/go
+setenv GOROOT /opt/go/1_9_1/go
+setenv CARGO_HOME ~/.cargo
 setenv PATH ${PATH}:${GOROOT}/bin
 setenv PATH ${PATH}:${PGSQL_HOME}/bin
+setenv PATH ${PATH}:${CARGO_HOME}/bin
+
 setenv PKG_CONFIG_PATH /opt/efl/1_20_2/libdata/pkgconfig
 
 setenv GODEBUG cgocheck=2
