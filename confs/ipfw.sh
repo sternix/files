@@ -66,20 +66,19 @@ $cmd table nrb add 224.0.0.0/3
 # antispoof
 $cmd add deny ip from any to any not antispoof in
 
-# reassembly incoming packets
-$cmd add reass all from any to any in
-
 # setup loopback
 $cmd add pass all from any to any via lo0
 $cmd add deny all from any to 127.0.0.0/8
 $cmd add deny ip from 127.0.0.0/8 to any
+
+# reassembly incoming packets
+$cmd add reass all from any to any in
 
 # stateful filter
 $cmd add check-state
 
 # allow connections established below
 $cmd add pass tcp from me to any established
-
 
 # allow connection out, add state for each
 $cmd add pass tcp from me to any setup keep-state
